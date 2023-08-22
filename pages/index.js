@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link'
 import styles from '../styles/Home.module.css';
+import PricingComponent from '../components/Pricing';
+import PricingPreviewComponent from '../components/PricingPreview';
 
 export default function Home() {
   return (
@@ -11,8 +13,15 @@ export default function Home() {
       </Head>
 
       <main>
-        Please access the pricing page here:
-        <Link href="pricingPage">Pricing Page</Link>
+
+        <h3>This is single price ID formatted total displayed using the <a href="https://developer.paddle.com/api-reference/transactions/preview-transaction" target="_blank">transaction preview API</a></h3>
+        <p>Access it as its own page <Link href="pricingPage">here</Link></p>
+        <PricingComponent />
+        <h3>This is a single price ID formatted total displayed using the <a href="https://developer.paddle.com/api-reference/pricing-preview/preview-prices" target="_blank">pricing preview API</a></h3>
+        <p>Access it as its own page <Link href="pricingPreviewPage">here</Link></p>
+        <PricingPreviewComponent />
+
+
       </main>
 
       <style jsx>{`

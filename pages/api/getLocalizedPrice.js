@@ -97,5 +97,5 @@ const currencySymbols = {
 async function fetchCurrencySymbol(currencyCode) {
     // Fetch the currency symbol from the currency code using the currency code to symbol mapping
     const symbol = currencySymbols[currencyCode];
-    return symbol || null; // Return null if currency symbol not found
+    return symbol || currencyCode; // Return 3 letter currency code if currency symbol not found
 }
