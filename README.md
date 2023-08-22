@@ -1,4 +1,8 @@
-## Please create a .env file with the following parameters:
+# <a href="https://next-pricing-paddle.vercel.app/" target="_blank">Live site is here!</a>
+
+
+## Testing
+### Please create a .env file with the following parameters:
 
 PB_VENDOR_AUTH_CODE='< Enter your Auth code here>'
 
